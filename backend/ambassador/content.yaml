@@ -1,0 +1,8 @@
+---
+apiVersion: getambassador.io/v2
+kind: Mapping
+name: get_content
+prefix: /v1/content/
+rewrite: ''
+service: content:3000
+bypass_auth: false
