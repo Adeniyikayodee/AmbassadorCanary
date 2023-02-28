@@ -20,5 +20,14 @@ services:
       - 3000:3000
     environment:
       PORT: 3000
-    depends_on:
-      - ambassador
+
+  # canary-content:
+  #   build: backend/canary-content/
+  #   container_name: canary-content
+  #   command: node app.js
+  #   hostname: content:3001
+  #   restart: always
+  #   ports:
+  #     - 3001:3001
+  #   environment:
+  #     PORT: 3001 
